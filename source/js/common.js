@@ -200,8 +200,6 @@ function outlink() {
 /* ----- all check----- */ 
 
 function allCheck() {
-  $(".allCheck").click(function(){
-    
 
     $(".allCheck").click(function() {
       if($(".allCheck").is(":checked")) $(".check").prop("checked", true);
@@ -215,7 +213,7 @@ function allCheck() {
       if(total != checked) $(".allCheck").prop("checked", false);
       else $(".allCheck").prop("checked", true); 
     });
-  })
+  
 }
 
 
