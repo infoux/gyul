@@ -3466,7 +3466,7 @@ body.sub header div.tools {
     display: inline-block;
     vertical-align: top;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 10px;
     color: #555555;
   }
@@ -3541,7 +3541,7 @@ body.sub header div.tools {
   body nav#main-menu div.menus > ul > li ul li a {
     display: block;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 48px;
     padding: 0 20px;
     color: #555555;
@@ -3582,7 +3582,7 @@ body.sub header div.tools {
     color: #555;
     font-size: 14px;
     margin-left: 20px;
-    font-weight: 600;
+    font-weight: 700;
   }
   body nav#main-menu div.tools a.home {
     color: #fff;
@@ -3632,7 +3632,7 @@ body.sub header div.tools {
     text-align: center;
     color: #111111;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 60px;
   }
   body nav#main-menu div.menus > ul > li h3 a.home {
@@ -3746,10 +3746,17 @@ body div#content.sub {
 body div#content.sub section.sub-head {
   position: relative;
   z-index: 600;
-  background: url(../images/board.png) no-repeat center/cover;
   height: 200px;
   margin: 0 0 30px;
   padding: 50px 0 0 0;
+}
+
+body div#content.sub section.sub-head.company {
+  background: url(../images/company.png) no-repeat center/cover;
+}
+
+body div#content.sub section.sub-head.board {
+  background: url(../images/board.png) no-repeat center/cover;
 }
 
 @media (min-width: 1195px) {
@@ -3820,7 +3827,7 @@ body div#content.sub section.sub-head div.container div.nodepth ul {
 
 body div#content.sub section.sub-head div.container div.nodepth ul li a {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
   color: #555555;
   line-height: 40px;
 }
@@ -3887,7 +3894,7 @@ body div#content.sub section.sub-head div.container div.depth2 .home {
   margin-right: 15px;
   display: inline-block;
   vertical-align: top;
-  width: 20px;
+  width: 30px;
   height: 18px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18.102' height='20' viewBox='0 0 18.102 20'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_108' data-name='사각형 108' width='18.102' height='20' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_23' data-name='그룹 23' transform='translate(0 0)'%3E%3Cg id='그룹_22' data-name='그룹 22' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_48' data-name='패스 48' d='M17.68,20H11.927a.422.422,0,0,1-.422-.422v-6.43H6.6v6.43A.422.422,0,0,1,6.175,20H.422A.422.422,0,0,1,0,19.578V5.592A.422.422,0,0,1,.205,5.23L8.834.06a.423.423,0,0,1,.434,0L17.9,5.23a.422.422,0,0,1,.205.362V19.578A.422.422,0,0,1,17.68,20m-5.33-.845h4.908V5.832L9.051.915.845,5.832V19.156H5.753v-6.43a.422.422,0,0,1,.422-.422h5.752a.422.422,0,0,1,.422.422Z' transform='translate(0 0)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat left center/auto 18px;
 }
@@ -3911,6 +3918,12 @@ body div#content.sub section.sub-head div.container div.depth2 div.depthlink a {
   font-size: 17px;
   color: #fff;
   font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body div#content.sub section.sub-head div.container div.depth2 div.depthlink a:hover {
+  color: #FFAA00;
 }
 
 @media (min-width: 1195px) {
@@ -3921,7 +3934,7 @@ body div#content.sub section.sub-head div.container div.depth2 div.depthlink a {
 
 body div#content.sub section.sub-head div.container div.depth2 div.depthlink a.on {
   color: #FFAA00;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 body div#content.sub section.sub-head div.container div.depth2 div.depthlink a::after {
@@ -4530,7 +4543,7 @@ body div#content.sub section.sub-board div.view div.board-navi div.navi:last-of-
 body div#content.sub section.sub-board div.view div.board-navi div.navi p {
   display: block;
   color: #111111;
-  font-weight: 600;
+  font-weight: 700;
   width: 70px;
   white-space: nowrap;
 }
@@ -4606,7 +4619,7 @@ body div#content.sub section.sub-board div.write .write-box .write-name {
 
 body div#content.sub section.sub-board div.write .write-box .write-name label {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111111;
   display: inline-block;
 }
@@ -4655,7 +4668,7 @@ body div#content.sub section.sub-board div.write .write-box .write-file {
 
 body div#content.sub section.sub-board div.write .write-box .write-file label {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111111;
   display: inline-block;
 }
@@ -4797,7 +4810,7 @@ body div#content.sub section.sub-board div.write .write-btn button {
   width: 96px;
   height: 48px;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 body div#content.sub section.sub-board div.write .write-btn button.cancle {
@@ -4880,7 +4893,7 @@ body div#content.sub section.login div.container fieldset input[type=password] {
   margin: 0 0 15px;
   padding: 0 10px 0 44px;
   outline: none;
-  font-weight: 600;
+  font-weight: 700;
   color: #111111;
   font-size: 15px;
 }
@@ -4947,7 +4960,7 @@ body div#content.sub section.login div.container fieldset button.submit {
   background: #333333;
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 38px;
 }
 
@@ -5068,7 +5081,7 @@ body div#content.sub section.find div.container fieldset div.find-type input:che
   background: #FEAD42;
   border: 1px solid #D17C0C;
   color: #111;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 body div#content.sub section.find div.container fieldset div.find-form {
@@ -5087,7 +5100,7 @@ body div#content.sub section.find div.container fieldset div.find-form label {
   display: inline-block;
   color: #111111;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 10px;
 }
 
@@ -5109,7 +5122,7 @@ body div#content.sub section.find div.container fieldset div.find-form select {
   margin: 0 0 30px;
   padding: 0 10px;
   outline: none;
-  font-weight: 600;
+  font-weight: 700;
   color: #111111;
   font-size: 15px;
   display: inline-block;
@@ -5219,7 +5232,7 @@ body div#content.sub section.find div.container fieldset div.find-form button.su
   background: #333333;
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 auto 38px;
 }
 
@@ -5234,7 +5247,7 @@ body div#content.sub section.find div.container fieldset div.find-form div.resul
   background: #F8FBFC;
   text-align: center;
   line-height: 68px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
 }
 
@@ -5278,7 +5291,7 @@ body div#content.sub section.sign div.container div.terms {
 
 body div#content.sub section.sign div.container div.terms h6 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111111;
   margin: 30px 0 20px;
 }
@@ -5379,7 +5392,7 @@ body div#content.sub section.sign div.container div.terms div.table div {
 
 body div#content.sub section.sign div.container div.sign-write h4 {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 700;
   color: #222;
   border-bottom: 1px solid #BBBBBB;
   padding: 0 0 15px;
@@ -5895,7 +5908,7 @@ body div#content.sub section.sign div.container div.finish img {
 body div#content.sub section.sign div.container div.finish h5 {
   font-size: 20px;
   margin: 30px 0 25px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111;
 }
 
@@ -5918,6 +5931,71 @@ body div#content.sub section.sign div.container div.finish p.text {
   body div#content.sub section.sign div.container div.finish p.text {
     font-size: 18px;
   }
+}
+
+body div#content.sub section.info {
+  text-align: center;
+}
+
+body div#content.sub section.info div.container h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #111111;
+  margin: 50px 0 40px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container h3 {
+    font-size: 28px;
+  }
+}
+
+body div#content.sub section.info div.container p {
+  font-size: 17px;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container p {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.info div.container p.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #753F0A;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container p.title {
+    font-size: 24px;
+  }
+}
+
+body div#content.sub section.info div.container .ceo {
+  margin-top: 42px;
+  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+  color: #555555;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container .ceo {
+    margin-top: 70px;
+    font-size: 19px;
+  }
+}
+
+body div#content.sub section.info div.container .ceo span {
+  margin-left: 16px;
+  color: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
 }
 
 body div#content.sub section.ready {
@@ -6067,7 +6145,7 @@ body footer#footer div.footer-box .linkbox div.agency {
   display: block;
   position: relative;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: #555;
   width: 150px;
 }
@@ -6214,7 +6292,7 @@ body footer#footer div.container ul.footer-link li:first-child::before {
 body footer#footer div.container ul.footer-link li a {
   display: inline-block;
   color: #555555;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
 }
 
