@@ -5998,22 +5998,22 @@ body div#content.sub section.info div.container .ceo span {
   color: #111111;
 }
 
-body div#content.sub section.ready {
+body div#content section.ready {
   text-align: center;
   padding: 50px 0;
 }
 
 @media (min-width: 1195px) {
-  body div#content.sub section.ready {
+  body div#content section.ready {
     padding: 100px 0;
   }
 }
 
-body div#content.sub section.ready div.container {
+body div#content section.ready div.container {
   text-align: center;
 }
 
-body div#content.sub section.ready div.container span {
+body div#content section.ready div.container span {
   display: block;
   font-size: 20px;
   font-weight: 900;
