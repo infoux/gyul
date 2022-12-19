@@ -5950,7 +5950,7 @@ body div#content.sub section.info div.container h3 {
   }
 }
 
-body div#content.sub section.info div.container p {
+body div#content.sub section.info div.container div.info-greeting p {
   font-size: 17px;
   color: #555555;
   line-height: 1.7;
@@ -5958,24 +5958,24 @@ body div#content.sub section.info div.container p {
 }
 
 @media (min-width: 1195px) {
-  body div#content.sub section.info div.container p {
+  body div#content.sub section.info div.container div.info-greeting p {
     font-size: 18px;
   }
 }
 
-body div#content.sub section.info div.container p.title {
+body div#content.sub section.info div.container div.info-greeting p.title {
   font-size: 20px;
   font-weight: 700;
   color: #753F0A;
 }
 
 @media (min-width: 1195px) {
-  body div#content.sub section.info div.container p.title {
+  body div#content.sub section.info div.container div.info-greeting p.title {
     font-size: 24px;
   }
 }
 
-body div#content.sub section.info div.container .ceo {
+body div#content.sub section.info div.container div.info-greeting .ceo {
   margin-top: 42px;
   text-align: end;
   font-size: 18px;
@@ -5984,18 +5984,64 @@ body div#content.sub section.info div.container .ceo {
 }
 
 @media (min-width: 1195px) {
-  body div#content.sub section.info div.container .ceo {
+  body div#content.sub section.info div.container div.info-greeting .ceo {
     margin-top: 70px;
     font-size: 19px;
   }
 }
 
-body div#content.sub section.info div.container .ceo span {
+body div#content.sub section.info div.container div.info-greeting .ceo span {
   margin-left: 16px;
   color: 20px;
   font-size: 20px;
   font-weight: 700;
   color: #111111;
+}
+
+body div#content.sub section.info div.container div.info-setup {
+  text-align: center;
+}
+
+body div#content.sub section.info div.container div.info-setup .img {
+  display: block;
+  width: 345px;
+  height: 229px;
+  background: url(../images/setup.svg) no-repeat center/auto 100%;
+  margin: 40px auto;
+  font-size: 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container div.info-setup .img {
+    width: 674px;
+    height: 446px;
+    margin: 50px auto 60px;
+  }
+}
+
+body div#content.sub section.info div.container div.info-setup p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container div.info-setup p {
+    font-size: 21px;
+  }
+}
+
+body div#content.sub section.info div.container div.info-setup p.dark {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container div.info-setup p.dark {
+    font-size: 21px;
+  }
 }
 
 body div#content section.ready {
@@ -6242,7 +6288,7 @@ body footer#footer div.footer-box .linkbox .link > ul li a.youtube {
 }
 
 body footer#footer div.footer-box .linkbox .link > ul li a.insta {
-  background: url(../images/insta.svg) no-repeat center/cover;
+  background: url(../images/insta.png) no-repeat center/cover;
 }
 
 body footer#footer div.footer-box .linkbox .link > ul li a.blog {
@@ -6250,7 +6296,7 @@ body footer#footer div.footer-box .linkbox .link > ul li a.blog {
 }
 
 body footer#footer div.footer-box .linkbox .link > ul li a.facebook {
-  background: url(../images/facebook.svg) no-repeat center/cover;
+  background: url(../images/facebook.png) no-repeat center/cover;
 }
 
 body footer#footer div.container {

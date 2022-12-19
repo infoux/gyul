@@ -2444,42 +2444,81 @@ body {
               font-size:28px;
             }
           }
-          p {
-            font-size: 17px;
-            color: #555555;
-            line-height: 1.7;
-            margin: 0;
-            @media (min-width: $screen-size-pc) {
-              font-size:18px;
-            }
-            &.title {
-              font-size: 20px;
-              font-weight: 700;
-              color: #753F0A;
+          div.info-greeting{
+            p {
+              font-size: 17px;
+              color: #555555;
+              line-height: 1.7;
+              margin: 0;
               @media (min-width: $screen-size-pc) {
-                font-size:24px;
+                font-size:18px;
+              }
+              &.title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #753F0A;
+                @media (min-width: $screen-size-pc) {
+                  font-size:24px;
+                }
+              }
+              
+            }
+  
+            .ceo{
+              margin-top: 42px;
+              text-align: end;
+              font-size: 18px;
+              font-weight: 700;
+              color: #555555;
+              @media (min-width: $screen-size-pc) {
+                margin-top: 70px;
+                font-size: 19px;
+              }
+              span{
+                margin-left: 16px;
+                color: 20px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #111111;
               }
             }
           }
 
-          .ceo{
-            margin-top: 42px;
-            text-align: end;
-            font-size: 18px;
-            font-weight: 700;
-            color: #555555;
-            @media (min-width: $screen-size-pc) {
-              margin-top: 70px;
-              font-size: 19px;
+          div.info-setup{
+            text-align: center;
+            .img {
+              display: block;
+              width: 345px;
+              height: 229px;
+              background: url(../images/setup.svg) no-repeat center / auto 100%;
+              margin: 40px auto;
+              font-size: 0;
+              @media (min-width: $screen-size-pc) {
+                width: 674px;
+                height: 446px;
+                margin: 50px auto 60px;
+              }
             }
-            span{
-              margin-left: 16px;
-              color: 20px;
-              font-size: 20px;
-              font-weight: 700;
-              color: #111111;
+            p {
+              font-size: 18px;
+              color: #555555;
+              line-height: 1.7;
+              margin: 0;
+              @media (min-width: $screen-size-pc) {
+                font-size:21px;
+              }
+              &.dark {
+                color: #111111;
+                font-size: 18px;
+                font-weight: 700;
+                @media (min-width: $screen-size-pc) {
+                  font-size:21px;
+                }
+              }
             }
           }
+          
+          
         }
       }
 
@@ -2686,13 +2725,13 @@ body {
                   background: url(../images/youtube.svg) no-repeat center / cover;
                 }
                 &.insta{
-                  background: url(../images/insta.svg) no-repeat center / cover;
+                  background: url(../images/insta.png) no-repeat center / cover;
                 }
                 &.blog{
                   background: url(../images/blog.png) no-repeat center / cover;
                 }
                 &.facebook{
-                  background: url(../images/facebook.svg) no-repeat center / cover;
+                  background: url(../images/facebook.png) no-repeat center / cover;
                 }
               }
             }
