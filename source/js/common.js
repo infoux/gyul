@@ -45,6 +45,65 @@ $(function(){
 
   /* ----- slider ----- */
 
+  new Swiper('.trend-swiper', {
+    direction: 'vertical', // 수직 슬라이드
+    autoplay:{
+      delay : 5000,
+      disableOnInteraction: false
+    },
+    loop: true, // 반복 재생 여부
+    slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+    spaceBetween: 10, // 슬라이드 사이 여백
+    navigation: {
+      nextEl: '.trend-next',
+      prevEl: '.trend-prev',
+    },
+    breakpoints: {
+      1199: {
+        direction: 'horizontal', // 수직 슬라이드
+        slidesPerView: 2,
+        spaceBetween: 4,
+      },
+    },
+  })
+
+  new Swiper('.gallery-swiper', {
+    autoplay: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+      nextEl: '.gallery-next',
+      prevEl: '.gallery-prev',
+    },
+    breakpoints: {
+      1199: {
+        direction: 'horizontal', // 수직 슬라이드
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  new Swiper('.notice-swiper', {
+    direction: 'vertical', // 수직 슬라이드
+    autoplay: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+      nextEl: '.notice-next',
+      prevEl: '.notice-prev',
+    },
+    breakpoints: {
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  });
 
 });
 
@@ -114,38 +173,6 @@ function menu() {
   });
 
 
-  var subToggle = "0";
-
-  $(".sub-head button").on("click", function(){
-
-    if (windowW < 1200) {
-
-        if (subToggle == "1") {
-    
-            $(this).parent().removeClass("on");
-            $(".shadow").removeClass("on");
-            subToggle = "0";
-    
-        } else if (windowW < 1200 || subToggle == "0") {
-    
-            $(this).parent().addClass("on");
-            $(".shadow").addClass("on");
-            subToggle = "1";
-    
-        }
-    
-        if ($(this).parent().hasClass("depth2")) {
-            $(".sub-head div.depth1").removeClass("on");
-        }
-    
-        if ($(this).parent().hasClass("depth1")) {
-            $(".sub-head div.depth2").removeClass("on");
-        }
-
-    }
-
-
-  });
 
 }
 
@@ -153,7 +180,7 @@ function menu() {
 function coverimage() {
 
 
-  $(".main-issue .slide").each(function(){
+  $(".gallery-img").each(function(){
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
 

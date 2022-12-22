@@ -3297,6 +3297,16 @@ body div.shadow.on {
   opacity: 1;
 }
 
+body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body u {
+  text-decoration: none;
+}
+
 body header {
   position: relative;
   z-index: 998;
@@ -3325,6 +3335,10 @@ body header.home {
   }
   body header.home.on .container h1 a {
     background: url(../images/logoA.svg) no-repeat center/100% auto;
+  }
+  body header.home.on .container .tools select {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='8' viewBox='0 0 12 8'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_16' data-name='사각형 16' width='8' height='12' transform='translate(0 0)' fill='%23f81'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_5' data-name='그룹 5' transform='translate(12 0) rotate(90)'%3E%3Cg id='그룹_1' data-name='그룹 1' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M.858,12a1.017,1.017,0,0,1-.573-.168.554.554,0,0,1-.065-.925L5.989,6,.22,1.093A.554.554,0,0,1,.285.168,1.053,1.053,0,0,1,1.5.218L7.781,5.561a.546.546,0,0,1,0,.875L1.5,11.783A.992.992,0,0,1,.858,12' transform='translate(0 0)' fill='%23f81'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat right center/14px auto;
+    color: #FF8811;
   }
 }
 
@@ -3394,6 +3408,11 @@ body header .container div.tools select {
   -webkit-appearance: none;
   color: #FF8811;
   font-size: 15px;
+}
+
+body header .container div.tools select.home {
+  color: #fff;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='8' viewBox='0 0 12 8'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_16' data-name='사각형 16' width='8' height='12' transform='translate(0 0)' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_5' data-name='그룹 5' transform='translate(12 0) rotate(90)'%3E%3Cg id='그룹_1' data-name='그룹 1' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M.858,12a1.017,1.017,0,0,1-.573-.168.554.554,0,0,1-.065-.925L5.989,6,.22,1.093A.554.554,0,0,1,.285.168,1.053,1.053,0,0,1,1.5.218L7.781,5.561a.546.546,0,0,1,0,.875L1.5,11.783A.992.992,0,0,1,.858,12' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat right center/14px auto;
 }
 
 @media (max-width: 1195px) {
@@ -3711,19 +3730,696 @@ body div#content.main section.main-issue {
   text-align: center;
 }
 
-body div#content.main section.main-issue div h3 {
+body div#content.main section.main-issue div.main-text {
   margin: 0 auto 15px;
-  padding-top: 110%;
+  height: 640px;
   background: url(../images/main.png) no-repeat center/cover;
-  font-size: 0;
+  padding: 90px 44px 0;
+  position: relative;
 }
 
 @media (min-width: 1195px) {
-  body div#content.main section.main-issue div h3 {
-    margin: 0px auto 40px;
-    padding: 0;
+  body div#content.main section.main-issue div.main-text {
+    padding: 240px 44px 0;
     height: 918px;
-    background: url(../images/main.png) no-repeat center/cover;
+  }
+}
+
+body div#content.main section.main-issue div.main-text h3 {
+  margin: 0 0 23px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0px 3px 15px #00000033;
+  line-height: 1.6;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text h3 {
+    font-size: 48px;
+  }
+}
+
+body div#content.main section.main-issue div.main-text h3 span {
+  display: block;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text h3 span {
+    display: inline-block;
+  }
+}
+
+body div#content.main section.main-issue div.main-text p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0px 3px 15px #00000033;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text p {
+    font-size: 22px;
+    line-height: 2;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  padding: 13px 15px;
+  text-align: start;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend {
+    text-align: center;
+    height: 78px;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend a {
+  font-size: 17px;
+  color: #FFA50A;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend a {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 128px;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper {
+  height: 25px;
+  overflow: hidden;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper {
+    display: inline-block;
+    width: 800px;
+    height: 35px;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper {
+    width: 400px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 10px;
+  }
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper .swiper-slide::after {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #929292;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper .swiper-slide span {
+  margin-right: 10px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-swiper .swiper-wrapper .swiper-slide span {
+    margin-right: 15px;
+  }
+}
+
+body div#content.main section.main-issue div.main-text div.main-trend .trend-btn {
+  display: none;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-btn {
+    margin-left: 20px;
+    display: inline-block;
+  }
+  body div#content.main section.main-issue div.main-text div.main-trend .trend-btn button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+  }
+}
+
+body div#content.main section.main-story {
+  text-align: center;
+  margin-top: 80px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story {
+    margin-top: 225px;
+  }
+}
+
+body div#content.main section.main-story h3 {
+  text-align: start;
+  font-size: 30px;
+  font-weight: 900;
+  color: #FEA100;
+  margin: 0 0 37px 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story h3 {
+    font-size: 42px;
+  }
+}
+
+body div#content.main section.main-story h3 span {
+  display: block;
+  color: #111111;
+  position: relative;
+  z-index: 99;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story h3 span {
+    display: inline-block;
+  }
+}
+
+body div#content.main section.main-story h3 span::before {
+  content: "";
+  width: 55px;
+  height: 52px;
+  background: url(../images/main-waterball.png) no-repeat center/cover;
+  position: absolute;
+  top: -10px;
+  left: 65px;
+  z-index: -1;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story h3 span::before {
+    width: 83px;
+    top: -20px;
+    height: 77px;
+    left: 77px;
+  }
+}
+
+body div#content.main section.main-story .stroy-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 345px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
+
+body div#content.main section.main-story .stroy-box::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 131px;
+  background: url(../images/leafTop.png) no-repeat center/cover;
+  position: absolute;
+  top: -87px;
+  right: -15px;
+  z-index: -1;
+}
+
+body div#content.main section.main-story .stroy-box::after {
+  content: "";
+  display: block;
+  width: 89px;
+  height: 61px;
+  background: url(../images/leafBottom.png) no-repeat center/cover;
+  position: absolute;
+  bottom: -20px;
+  left: -15px;
+  z-index: -1;
+}
+
+body div#content.main section.main-story .stroy-box li {
+  position: relative;
+  width: 345px;
+  height: 210px;
+  -webkit-box-shadow: 0px 20px 40px #0000001A;
+          box-shadow: 0px 20px 40px #0000001A;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li {
+    width: 380px;
+    height: 450px;
+    margin-right: 30px;
+  }
+}
+
+body div#content.main section.main-story .stroy-box li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+body div#content.main section.main-story .stroy-box li a::after {
+  content: ">";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li a::after {
+    width: 76px;
+    height: 76px;
+    font-size: 40px;
+    bottom: 212px;
+  }
+}
+
+body div#content.main section.main-story .stroy-box li a img {
+  width: 100%;
+  height: 160px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li a img {
+    height: 200px;
+  }
+}
+
+body div#content.main section.main-story .stroy-box li a div {
+  padding: 13px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li a div {
+    padding: 41px 40px;
+  }
+}
+
+body div#content.main section.main-story .stroy-box li a div h5 {
+  background: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  color: #111111;
+  margin: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li a div h5 {
+    font-size: 24px;
+    margin: 0 0 23px 0;
+  }
+}
+
+body div#content.main section.main-story .stroy-box li a div p {
+  display: none;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-story .stroy-box li a div p {
+    display: block;
+    font-size: 19px;
+    color: #555555;
+    margin: 10px 0;
+  }
+}
+
+body div#content.main section.main-gallery {
+  margin-top: 80px;
+  text-align: center;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery {
+    margin-top: 195px;
+  }
+}
+
+body div#content.main section.main-gallery h3 {
+  text-align: start;
+  font-size: 19px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery h3 {
+    font-size: 30px;
+  }
+}
+
+body div#content.main section.main-gallery h3 span {
+  font-size: 30px;
+  font-weight: 900;
+  color: #FEA100;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery h3 span {
+    font-size: 42px;
+  }
+}
+
+body div#content.main section.main-gallery a {
+  display: block;
+  text-align: end;
+  margin: 20px 0 0 0;
+  font-size: 15px;
+  color: #555555;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery a {
+    font-size: 17px;
+  }
+}
+
+body div#content.main section.main-gallery .gallery-box {
+  position: relative;
+  margin: 19px auto 0;
+  width: 100%;
+  height: 400px;
+  background: url(../images/main-gallery.png) no-repeat center/cover;
+  padding: 95px 15px 55px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery .gallery-box {
+    margin: 40px auto 0;
+  }
+}
+
+body div#content.main section.main-gallery .gallery-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+body div#content.main section.main-gallery .gallery-box .gallery-swiper {
+  width: 345px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery .gallery-box .gallery-swiper {
+    width: 100%;
+  }
+}
+
+body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide {
+  width: 360px;
+  height: 260px;
+}
+
+body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide img {
+  display: none;
+}
+
+body div#content.main section.main-gallery .gallery-box .btn-box {
+  z-index: 99;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+}
+
+body div#content.main section.main-gallery .gallery-box .btn-box button {
+  font-size: 50px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+body div#content.main section.main-notice {
+  position: relative;
+  margin-top: 70px;
+  text-align: center;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice {
+    margin-bottom: 185px;
+  }
+}
+
+body div#content.main section.main-notice .notice-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-box {
+    width: 770px;
+  }
+}
+
+body div#content.main section.main-notice .notice-box h5 {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-box h5 {
+    font-size: 28px;
+  }
+}
+
+body div#content.main section.main-notice .notice-box .notice-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: end;
+}
+
+body div#content.main section.main-notice .notice-box .notice-btn button {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 15px;
+}
+
+body div#content.main section.main-notice .notice-box .notice-btn a {
+  font-size: 18px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-box .notice-btn a {
+    font-size: 28px;
+  }
+}
+
+body div#content.main section.main-notice .notice-swiper {
+  margin-top: 12px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-swiper {
+    width: 770px;
+    height: 440px;
+  }
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide {
+  padding: 24px;
+  background: #F5F5F5;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-swiper .swiper-slide {
+    padding: 40px 34px;
+  }
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide a {
+  width: 100%;
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide a p {
+  margin: 10px 0;
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide a p.day {
+  font-size: 15px;
+  color: #111111;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-swiper .swiper-slide a p.day {
+    font-size: 17px;
+  }
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide a p.text {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #555555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-swiper .swiper-slide a p.text {
+    font-size: 18px;
+  }
+}
+
+body div#content.main section.main-notice .notice-swiper .swiper-slide a h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  margin: 5px 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .notice-swiper .swiper-slide a h6 {
+    font-size: 20px;
+  }
+}
+
+body div#content.main section.main-notice .youtube {
+  margin-top: 25px;
+  min-width: 345px;
+  min-height: 238px;
+  width: 100%;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .youtube {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 406px;
+    height: 280px;
+    margin: 0;
+  }
+}
+
+body div#content.main section.main-notice .youtube iframe {
+  min-width: 345px;
+  min-height: 238px;
+  width: 100%;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .youtube iframe {
+    width: 406px;
+    height: 280px;
+  }
+}
+
+body div#content.main section.main-notice .brochure {
+  margin-top: 25px;
+  margin-bottom: 72px;
+  display: block;
+  font-size: 0;
+  background: url(../images/brochure.png) no-repeat center/cover;
+  width: 100%;
+  min-width: 345px;
+  height: 118px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .brochure {
+    position: absolute;
+    top: 345px;
+    right: 0;
+    width: 406px;
+    height: 140px;
+    margin: 0;
   }
 }
 
