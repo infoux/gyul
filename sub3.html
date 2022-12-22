@@ -195,6 +195,11 @@
 
                         <div class="table">
                                 <p>
+                                    <strong><label for="name"><i>*</i> 기업명</label></strong>
+                                    <input id="name" type="text" readonly>
+                                    <button class="sub sign-modal">찾기</button>
+                                </p>
+                                <p>
                                     <strong><label for="name"><i>*</i> 이름</label></strong>
                                     <input id="name" type="text">
                                     
@@ -294,8 +299,50 @@
         </div> 
         <!-- E:mainContent -->
 
+        <div id="modal-co" class="modal">
+        <div class="modal-content scroll full">
+          <h2>기업찾기<button class="close">닫기</button></h2>
+                      <div class="inside">
+                        
+                        <div class="company-search">
+                                <label for="company-name">기업명</label>
+                                <input id="company-name" type="text">
+                                <button>조회</button>
+                                <button class="add">추가</button>
+                        </div>
 
-        <div class="shadow"></div>
+                        <ul class="company-list">
+                            <li>
+                                <a href="">
+                                    <p class="button"><span>선택</span><u><button>선택</button></u></p>
+                                    <p class="code">
+                                        <span>기업코드</span><u>C00001</u>
+                                    </p>
+                                    <p class="cname"><span>기업명</span><u>인포마인드</u></p>
+                                    <p class="name"><span>대표자명</span><u>홍길동</u></p>
+                                    <p class="cnum"><span>사업자번호</span><u>616-00-000000</u></p>
+                                    <p class="category1"><span>업태</span><u>서비스업</u></p>
+                                    <p class="category2"><span>업종</span><u>IT서비스</u></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="button"><span>선택</span><u><button>선택</button></u></p>
+                                    <p class="code">
+                                        <span>기업코드</span><u>C00001</u>
+                                    </p>
+                                    <p class="cname"><span>기업명</span><u>인포마인드</u></p>
+                                    <p class="name"><span>대표자명</span><u>홍길동</u></p>
+                                    <p class="cnum"><span>사업자번호</span><u>616-00-000000</u></p>
+                                    <p class="category1"><span>업태</span><u>서비스업</u></p>
+                                    <p class="category2"><span>업종</span><u>IT서비스</u></p>
+                                </a>
+                            </li>
+                            
+                        </ul>
+        </div>
+        </div>
+        </div>
         <!-- S:footer -->
         <footer id="footer">
           <div class="footer-box">

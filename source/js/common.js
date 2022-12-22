@@ -38,7 +38,13 @@ $(function(){
   });
 
 
+  $(".sign-modal").on("click",function(){
+    $(".modal").addClass("on")
+  })
 
+  $(".modal-content .close").on("click",function(){
+    $(".modal").removeClass("on")
+  })
 
   
 
