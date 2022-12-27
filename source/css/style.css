@@ -6629,6 +6629,9 @@ body div#content.sub section.sub-board div.photo ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px 10px;
@@ -6638,6 +6641,9 @@ body div#content.sub section.sub-board div.photo ul {
 @media (min-width: 1195px) {
   body div#content.sub section.sub-board div.photo ul {
     gap: 70px 60px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 

@@ -2451,11 +2451,13 @@ body {
           }
           ul{
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 50px 10px;
             min-width: 340px;
             @media (min-width: $screen-size-pc) {
               gap: 70px 60px;
+              justify-content: flex-start;
             }
             li{
               width: 155px;
