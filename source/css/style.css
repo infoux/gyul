@@ -6331,6 +6331,7 @@ body div#content.sub section.sub-board div.write .write-box .write-file label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 20px;
   }
 }
 
@@ -6402,7 +6403,7 @@ body div#content.sub section.sub-board div.write .write-box .write-file .file-na
 @media (min-width: 1195px) {
   body div#content.sub section.sub-board div.write .write-box .write-file .file-name {
     display: block;
-    margin-left: 50px;
+    margin-left: 70px;
   }
 }
 

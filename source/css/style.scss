@@ -2212,6 +2212,7 @@ body {
                   width: 50px;
                   display: inline-flex;
                   align-items: center;
+                  margin-right: 20px;
                 }
               }
               .upload{
@@ -2260,7 +2261,7 @@ body {
                 margin-top: 17px;
                 @media (min-width: $screen-size-pc) {
                   display: block;
-                  margin-left: 50px;
+                  margin-left: 70px;
                 }
                 button{
                   width: 25px;
