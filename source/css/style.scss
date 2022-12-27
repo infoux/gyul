@@ -1210,11 +1210,13 @@ body {
             padding: 0;
           }
           .btn-box{
+            width: 345px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             z-index: 99;
+            margin: 0 auto;
             @media (min-width: $screen-size-pc) {
-              justify-content: flex-end;
+              width: 100%;
             }
             button{
               font-size: 50px;
@@ -1238,6 +1240,37 @@ body {
                 margin: 0;
                 img{
                   display: none;
+                }
+                .gallery-text{
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  width: 345px;
+                  height: 250px;
+                  color: #111111;
+                  font-size: 24px;
+                  font-weight: 700;
+                  text-align: center;
+                  background: rgba(255, 255, 255, 0.8);
+                  opacity: 0;
+                  transition: all 0.3s ease-in-out 0s;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  &:hover{
+                    opacity: 1;
+                  }
+                  @media (min-width: $screen-size-pc) {
+                    width: 100%;
+                  }
+                  i{
+                    font-style: normal;
+                    display: block;
+                  }
+                  h4{
+                    margin: 5px 0 0 0;
+                  }
                 }
               }
               
@@ -2628,6 +2661,7 @@ body {
               justify-content: flex-start;
             }
             li{
+              position: relative;
               width: 155px;
               height: 190px;
               box-shadow: 0px 10px 20px #0000001A;
@@ -2651,6 +2685,55 @@ body {
                   img{
                     display: none;
                   }
+
+                }
+                .bghover{
+                  position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 155px;
+                height: 106px;
+                color: #111111;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.4);
+                opacity: 0;
+                transition: all 0.3s ease-in-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                  opacity: 1;
+                }
+                &::before{
+                  content: "";
+                  width: 50px;
+                  height: 50px;
+                  display: block;
+                  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='111' height='111' viewBox='0 0 111 111'%3E%3Cdefs%3E%3Cfilter id='패스_821' x='0' y='0' width='111' height='111' filterUnits='userSpaceOnUse'%3E%3CfeOffset input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='7.5' result='blur'/%3E%3CfeFlood flood-opacity='0.4'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(%23패스_821)'%3E%3Cpath id='패스_821-2' data-name='패스 821' d='M3,3V32.333H32.333V3ZM25,25H10.333V10.333H25ZM3,39.667V69H32.333V39.667Zm22,22H10.333V47H25ZM39.667,3V32.333H69V3Zm22,22H47V10.333H61.667Zm-22,14.667V69H69V39.667Zm22,22H47V47H61.667Z' transform='translate(19.5 19.5)' fill='%23fff' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/cover ;
+                  @media (min-width: $screen-size-pc) {
+                    width: 150px;
+                    height: 150px;
+                  }
+                }
+                @media (min-width: $screen-size-pc) {
+                  width: 360px;
+                  height: 230px;
+                }
+                &.youtube {
+                  &::before{
+                    content: "";
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='123.333' height='123.333' viewBox='0 0 123.333 123.333'%3E%3Cdefs%3E%3Cfilter id='패스_784' x='0' y='0' width='123.333' height='123.333' filterUnits='userSpaceOnUse'%3E%3CfeOffset input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='7.5' result='blur'/%3E%3CfeFlood flood-opacity='0.4'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(%23패스_784)'%3E%3Cpath id='패스_784-2' data-name='패스 784' d='M33.333,58.792l23.5-17.625-23.5-17.625ZM41.167,2A39.167,39.167,0,1,0,80.333,41.167,39.181,39.181,0,0,0,41.167,2Zm0,70.5A31.333,31.333,0,1,1,72.5,41.167,31.375,31.375,0,0,1,41.167,72.5Z' transform='translate(20.5 20.5)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/cover ;
+                    @media (min-width: $screen-size-pc) {
+                      width: 150px;
+                      height: 150px;
+                    }
+                  }
+                }
                 }
                 i{
                   font-style: normal;
