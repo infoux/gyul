@@ -805,7 +805,7 @@ body {
                                 line-height: 1.6;
                                 opacity: 0;
 
-                                @include ani(0.6s);
+                                @include ani(0.2s);
 
                                 &.active,
                                 &:hover {
@@ -850,7 +850,8 @@ body {
                             max-height: 1000px;
                             padding: 40px 0 0 20px;
                             border-left: 1px solid #ccc;
-                        &.last{
+                            border-top: 1px solid #ccc;
+                        &:last-of-type{
                           border-right: 1px solid #ccc;
                         }
                             a {
