@@ -1438,6 +1438,12 @@ body {
           &.board{
             background: url(../images/board.png) no-repeat center / cover;
           }
+          &.photo{
+            background: url(../images/photo.png) no-repeat center / cover;
+          }
+          &.gyul{
+            background: url(../images/gyul.png) no-repeat center / cover;
+          }
           @media (min-width: $screen-size-pc) {
             height: 300px;
             padding: 100px 0 0 0;
@@ -1681,6 +1687,109 @@ body {
               }
             }
           }
+
+          .brochure{
+            width: 346px;
+            height: 360px;
+            border: 1px solid #BBBBBB;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 40px;
+            @media (min-width: $screen-size-pc) {
+              width: 100%;
+              height: 480px;
+              padding: 25px;
+              display: flex;
+              text-align: left;
+            }
+            img{
+              display: block;
+              width: 133px;
+              height: 198px;
+              margin: 15px auto;
+              @media (min-width: $screen-size-pc) {
+                display: inline-block;
+              width: 290px;
+              height: 430px;
+              margin: 0;
+              }
+            }
+            .brochure-text{
+              display: inline-block;
+              @media (min-width: $screen-size-pc) {
+                margin: 90px 0 0 27px;
+              }
+              p{
+                font-size: 18px;
+                color: #111111;
+                margin: 0;
+                @media (min-width: $screen-size-pc) {
+                  font-size: 21px;
+                  display: block;
+                }
+              }
+              h4{
+                font-size: 20px;
+                font-weight: 900;
+                color: #111111;
+                margin: 5px 0 15px 0;
+                @media (min-width: $screen-size-pc) {
+                  display: block;
+                  font-size: 25px;
+                }
+                span{
+                  font-weight: 400;
+                }
+              }
+              a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 135px;
+                height: 46px;
+                background: #D43926;
+                border: 1px solid #561A12;
+                @media (min-width: $screen-size-pc) {
+                  width: 140px;
+                  height: 50px;
+                }
+                &:first-of-type{
+                  margin-right: 15px;
+                }
+                
+                span{
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #fff;
+                  display: flex;
+                  @media (min-width: $screen-size-pc) {
+                    font-size: 18px;
+                  }
+                  &.view{
+                    &::before{
+                      content: "";
+                      display: inline-block;
+                      width: 19px;
+                      height: 19px;
+                      margin-right: 7px;
+                      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 20 20'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_281' data-name='사각형 281' width='20' height='20' fill='%23ffd277'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_126' data-name='그룹 126' transform='translate(0 0)'%3E%3Cg id='그룹_125' data-name='그룹 125' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_803' data-name='패스 803' d='M16.057,8.029a8.029,8.029,0,1,0-8.046,8.029,7.913,7.913,0,0,0,4.264-1.249L17.467,20,20,17.467l-5.192-5.174a7.96,7.96,0,0,0,1.249-4.264m-8.029,4.46a4.46,4.46,0,1,1,4.46-4.46,4.462,4.462,0,0,1-4.46,4.46' transform='translate(0 0)' fill='%23ffd277'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / cover ;
+                    }
+                  }
+                  &.down{
+                    &::before{
+                      content: "";
+                      display: inline-block;
+                      width: 25px;
+                      height: 19px;
+                      margin-right: 7px;
+                      background: url("data:image/svg+xml,%3Csvg id='file_download_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_789' data-name='패스 789' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_790' data-name='패스 790' d='M20.111,9.274H15.793V3H9.317V9.274H5l7.555,7.32ZM5,18.686v2.091H20.111V18.686Z' transform='translate(-0.555 -0.333)' fill='%23ffd277'/%3E%3C/svg%3E") no-repeat center / cover ;
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
         }
 
         div.list {
@@ -1706,7 +1815,8 @@ body {
                   left:0;
                   right:0;
                   height:50px;
-                  border-bottom:1px solid #555555;
+                  border-top:1px solid #111111;
+                  border-bottom:1px solid #BBBBBB;
                 }
                 
 
@@ -1716,7 +1826,7 @@ body {
               a {
                 display:block;
                 border-bottom:1px solid #CCCCCC;
-                padding:12px 0;
+                padding:20px 0;
   
                 @media (min-width: $screen-size-pc) {
                     padding:28px 0;
@@ -1794,6 +1904,21 @@ body {
                       }
                     }
 
+                    &.text2 {
+                      @media (min-width: $screen-size-pc) {
+                        width:calc(100% - 241px);
+                      }
+
+                      h5 {
+                        margin:0;
+                        font-size:15px;
+                        color:#111111;
+                        font-weight:500;
+                        line-height:1.6;
+                        display: block;
+                      }
+                    }
+
                     &.name {
                       display:none;
   
@@ -1820,6 +1945,45 @@ body {
                         font-size:15px;
                         width:140px;
                         color:#555555;
+                      }
+                    }
+                    &.file {
+                      position: relative;
+                      margin-left:auto;
+                      text-align:center;
+                      font-size:14px;
+                      color:#555555;
+                      padding:0 10px;
+                      
+                      @media (min-width: $screen-size-pc) {
+                        font-size:15px;
+                        width:140px;
+                        color:#555555;
+                      }
+                      strong {
+                        display:none;
+                      }
+                      span{
+                        position: absolute;
+                        display: block;
+                        background: #DCDCDC;
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 50%;
+                        top: -17px;
+                        right: 0;
+                        @media (min-width: $screen-size-pc) {
+                          top: 0;
+                          right: 50px;
+                        }
+                        &::before{
+                          content: "";
+                          background: url("data:image/svg+xml,%3Csvg id='file_download_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_789' data-name='패스 789' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_790' data-name='패스 790' d='M17.295,9.4H13.782V3H8.513V9.4H5l6.147,7.47ZM5,19.008v2.134H17.295V19.008Z' transform='translate(0.853 0.512)' fill='%233a9a8f'/%3E%3C/svg%3E%0A") no-repeat center / cover ;
+                          display: block;
+                          margin-left: 3px;
+                          width: 28px;
+                          height: 30px;
+                        }
                       }
                     }
 
