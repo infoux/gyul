@@ -74,7 +74,10 @@ $(function(){
   })
 
   new Swiper('.gallery-swiper', {
-    autoplay: true,
+    autoplay:{
+      delay : 5000,
+      disableOnInteraction: false
+    },
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -94,10 +97,13 @@ $(function(){
 
   new Swiper('.notice-swiper', {
     direction: 'vertical', // 수직 슬라이드
-    autoplay: true,
+    // autoplay:{
+    //   delay : 5000,
+    //   disableOnInteraction: false
+    // },
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: true,
+    loop: false,
 
     navigation: {
       nextEl: '.notice-next',
@@ -190,21 +196,10 @@ function coverimage() {
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
 
-  $(".main-news .news p.image").each(function(){
+  $(".photo p.img-bg").each(function(){
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
 
-  $(".main-factory p.image").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-  $(".sub-content .sub-agency-detail p.image").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-  $(".sub-content ul.galleryList p.image").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
 }
 
 /* ----- main tab ----- */ 
