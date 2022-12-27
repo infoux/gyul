@@ -86,6 +86,15 @@ body {
 			height:50px;
       font-size: 50px;
       }
+      &.youtube {
+        top: -40px;
+        right: 10px;
+        color: #fff;
+        @media (min-width: $screen-size-pc) {
+          top: -50px;
+        right: 5px;
+        }
+      }
 		}
 
     div.pw-modal{
@@ -225,6 +234,7 @@ body {
     
 
     div.youtube{
+      position: relative;
       width: 300px;
         height: 315px;
       background: #eee;

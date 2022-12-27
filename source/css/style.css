@@ -3907,6 +3907,19 @@ body div.shadow button.close {
   }
 }
 
+body div.shadow button.close.youtube {
+  top: -40px;
+  right: 10px;
+  color: #fff;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow button.close.youtube {
+    top: -50px;
+    right: 5px;
+  }
+}
+
 body div.shadow div.pw-modal {
   position: relative;
   width: 300px;
@@ -4075,6 +4088,7 @@ body div.shadow div.pw-modal div.result {
 }
 
 body div.shadow div.youtube {
+  position: relative;
   width: 300px;
   height: 315px;
   background: #eee;
