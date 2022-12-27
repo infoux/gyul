@@ -3887,60 +3887,191 @@ body div.shadow.on {
 
 body div.shadow button.close {
   position: absolute;
-  right: 50px;
-  top: 70px;
+  right: 20px;
+  top: 5px;
   width: 25px;
   height: 25px;
   border: none;
-  color: #FFF;
+  color: #333;
   background: transparent;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media (min-width: 1195px) {
   body div.shadow button.close {
-    right: 100px;
-    top: 70px;
+    right: 20px;
+    top: 0;
     width: 50px;
     height: 50px;
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 
-body div.shadow div.find label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 173px;
-  height: 48px;
-  margin: 0;
-  background: #ECECEC;
-  border: 1px solid #ECECEC;
-  cursor: pointer;
+body div.shadow div.pw-modal {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  font-size: 0;
+  padding: 40px 30px 50px;
+  border-radius: 10px;
 }
 
 @media (min-width: 1195px) {
-  body div.shadow div.find label {
-    width: 220px;
-    height: 54px;
+  body div.shadow div.pw-modal {
+    width: 800px;
+    height: 350px;
   }
 }
 
-body div.shadow div.find input {
-  display: none;
+body div.shadow div.pw-modal label {
+  display: inline-block;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
 }
 
-body div.shadow div.find input:checked + label {
-  background: #FEAD42;
-  border: 1px solid #D17C0C;
-  color: #111;
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal label {
+    font-size: 16px;
+    margin: 0 0 12px;
+  }
+}
+
+body div.shadow div.pw-modal input[type=password],
+body div.shadow div.pw-modal select {
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid #999999;
+  margin: 0 0 30px;
+  padding: 0 10px;
+  outline: none;
   font-weight: 700;
+  color: #111111;
+  font-size: 15px;
+  display: inline-block;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal input[type=password],
+  body div.shadow div.pw-modal select {
+    font-size: 16px;
+  }
+}
+
+body div.shadow div.pw-modal input[type=password]::-webkit-input-placeholder,
+body div.shadow div.pw-modal select::-webkit-input-placeholder {
+  color: #999999;
+}
+
+body div.shadow div.pw-modal input[type=password]:-ms-input-placeholder,
+body div.shadow div.pw-modal select:-ms-input-placeholder {
+  color: #999999;
+}
+
+body div.shadow div.pw-modal input[type=password]::-ms-input-placeholder,
+body div.shadow div.pw-modal select::-ms-input-placeholder {
+  color: #999999;
+}
+
+body div.shadow div.pw-modal input[type=password]::placeholder,
+body div.shadow div.pw-modal select::placeholder {
+  color: #999999;
+}
+
+body div.shadow div.pw-modal input[type=password]:focus,
+body div.shadow div.pw-modal select:focus {
+  border-color: #FEA100;
+  -webkit-box-shadow: 0 6px 0 0 rgba(61, 90, 238, 0.15);
+          box-shadow: 0 6px 0 0 rgba(61, 90, 238, 0.15);
+}
+
+body div.shadow div.pw-modal i.check {
+  position: absolute;
+  left: 30px;
+  bottom: 107px;
+  font-size: 15px;
+  color: #FF8811;
+  padding-right: 4px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal i.check {
+    left: 30px;
+    bottom: 100px;
+  }
+}
+
+body div.shadow div.pw-modal select {
+  padding: 0;
+  text-align: center;
+}
+
+body div.shadow div.pw-modal u {
+  display: inline-block;
+  width: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+body div.shadow div.pw-modal button.send {
+  width: 85px;
+  font-size: 13px;
+  margin-left: 5px;
+  padding: 0;
+  vertical-align: top;
+  border-radius: 6px;
+  height: 46px;
+  border: 1px solid #4D4D4D;
+  background: #4D4D4D;
+  color: #fff;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal button.send {
+    width: 95px;
+    font-size: 14px;
+  }
+}
+
+body div.shadow div.pw-modal button.submit {
+  display: block;
+  width: 100px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #2C2C2C;
+  background: #333333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 38px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal button.submit {
+    font-size: 17px;
+  }
+}
+
+body div.shadow div.pw-modal div.result {
+  border: 1px solid #ccc;
+  background: #F8FBFC;
+  text-align: center;
+  line-height: 68px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.pw-modal div.result {
+    margin: 0 -70px -40px;
+    border: none;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+  }
 }
 
 body div.shadow div.youtube {
@@ -4013,18 +4144,6 @@ body div.find-form select {
   body div.find-form input[type=password],
   body div.find-form select {
     font-size: 16px;
-  }
-}
-
-body div.find-form input[type=password].tel,
-body div.find-form select.tel {
-  width: calc((100% - 110px) / 3);
-}
-
-@media (min-width: 1195px) {
-  body div.find-form input[type=password].tel,
-  body div.find-form select.tel {
-    width: calc((100% - 120px) / 3);
   }
 }
 
