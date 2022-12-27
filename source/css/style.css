@@ -4632,10 +4632,6 @@ body.sub header div.tools {
     max-height: 0;
     overflow: hidden;
     text-align: left;
-    border-left: 1px solid #ccc;
-  }
-  body nav#main-menu div.menus > ul > li ul:last-of-type {
-    border-right: 1px solid #ccc;
   }
   body nav#main-menu div.menus > ul > li ul:hover {
     background-color: #FEF9F1;
@@ -4650,6 +4646,8 @@ body.sub header div.tools {
     font-weight: 500;
     line-height: 1.6;
     opacity: 0;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
   }
   body nav#main-menu div.menus > ul > li ul li a.active, body nav#main-menu div.menus > ul > li ul li a:hover {
     color: #FF8811;
@@ -4674,8 +4672,16 @@ body.sub header div.tools {
     color: #111111;
   }
   body nav#main-menu.on div.menus > ul > li ul {
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+    -webkit-transition-property: border;
+    transition-property: border;
     max-height: 1000px;
     padding: 40px 0 0 20px;
+    border-left: 1px solid #ccc;
+  }
+  body nav#main-menu.on div.menus > ul > li ul.last {
+    border-right: 1px solid #ccc;
   }
   body nav#main-menu.on div.menus > ul > li ul a {
     opacity: 1;

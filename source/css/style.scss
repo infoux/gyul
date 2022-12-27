@@ -788,10 +788,7 @@ body {
                         max-height: 0;
                         overflow: hidden;
                         text-align: left;
-                        border-left: 1px solid #ccc ;
-                        &:last-of-type{
-                          border-right: 1px solid #ccc ;
-                        }
+                        
                         &:hover{
                           background-color: #FEF9F1;
                           border-top: 1px solid #ccc;
@@ -808,7 +805,7 @@ body {
                                 line-height: 1.6;
                                 opacity: 0;
 
-                                // @include ani(0.6s);
+                                @include ani(0.6s);
 
                                 &.active,
                                 &:hover {
@@ -831,6 +828,7 @@ body {
             height: 291px;
             background: #fff;
             border-top: 1px solid #ccc ;
+            
             @include drop-shadow($x: 0, $y: 12px, $blur: 12px, $spread: 0, $alpha: 0.25);
 
             div.tools{
@@ -847,9 +845,14 @@ body {
                         }
                       }
                         ul {
+                          transition-delay: 0.15s;
+                          transition-property: border;
                             max-height: 1000px;
                             padding: 40px 0 0 20px;
-
+                            border-left: 1px solid #ccc;
+                        &.last{
+                          border-right: 1px solid #ccc;
+                        }
                             a {
                                 opacity: 1;
                             }
