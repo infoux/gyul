@@ -3869,10 +3869,11 @@ body div.shadow {
   transition: all 0.2s ease;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  padding: 0 50px;
 }
 
 body div.shadow.on {
-  z-index: 100000000000;
+  z-index: 1000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3920,6 +3921,20 @@ body div.shadow button.close.youtube {
   }
 }
 
+body div.shadow button.close.photo {
+  color: #fff;
+  top: 0;
+  right: 15px;
+  font-size: 35px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow button.close.photo {
+    top: 0;
+    right: 5px;
+  }
+}
+
 body div.shadow div.pw-modal {
   position: relative;
   width: 300px;
@@ -3935,6 +3950,10 @@ body div.shadow div.pw-modal {
     width: 800px;
     height: 350px;
   }
+}
+
+body div.shadow div.pw-modal.view {
+  height: 235px;
 }
 
 body div.shadow div.pw-modal label {
@@ -4110,6 +4129,148 @@ body div.shadow div.youtube iframe {
     width: 100%;
     height: 100%;
   }
+}
+
+body div.shadow div.photo {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  background: #111111;
+  -webkit-box-shadow: 0px 0px 20px #00000066;
+          box-shadow: 0px 0px 20px #00000066;
+  padding: 22px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo {
+    width: 944px;
+    height: 653px;
+  }
+}
+
+body div.shadow div.photo h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo h4 {
+    font-size: 24px;
+  }
+}
+
+body div.shadow div.photo .photo-swiper {
+  width: 100%;
+  height: 315px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo .photo-swiper {
+    width: 900px;
+    height: 560px;
+  }
+}
+
+body div.shadow div.photo .photo-swiper .swiper-slide {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo .photo-swiper .swiper-slide {
+    width: 900px;
+  }
+}
+
+body div.shadow div.photo .photo-swiper .swiper-slide img {
+  display: none;
+}
+
+body div.shadow div.photo .photo-swiper .btn-box button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 9999999999999;
+  width: 45px;
+  height: 65px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 70px;
+  color: #fff;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo .photo-swiper .btn-box button {
+    font-size: 120px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+body div.shadow div.photo .photo-swiper .btn-box button.photo-prev {
+  left: -65px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo .photo-swiper .btn-box button.photo-prev {
+    padding-right: 90px;
+  }
+}
+
+body div.shadow div.photo .photo-swiper .btn-box button.photo-next {
+  right: -30px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.photo .photo-swiper .btn-box button.photo-next {
+    padding-left: 950px;
+  }
+}
+
+body div.shadow div.photo .photo-swiper .btn-box button.swiper-button-disabled {
+  opacity: 0.2;
+}
+
+body div.shadow div.photo .photo-swiper .swiper-pagination {
+  z-index: 9999999999999;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 90px;
+  height: 36px;
+  background: #111;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+body div.shadow div.photo .photo-swiper .swiper-pagination .swiper-pagination-current {
+  color: #FF8811;
+  margin-right: 8px;
+}
+
+body div.shadow div.photo .photo-swiper .swiper-pagination .swiper-pagination-total {
+  background: transparent;
+  color: #fff;
+  margin-left: 8px;
 }
 
 body div.find-form {
@@ -6485,10 +6646,14 @@ body div#content.sub section.sub-board div.view div.button-set a.list {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  border-bottom: 1px solid #2C2C2C;
   background: #333333;
   line-height: 46px;
   padding: 0 30px;
+}
+
+body div#content.sub section.sub-board div.view div.button-set a.list.change {
+  margin-left: 10px;
+  background: #FF8811;
 }
 
 body div#content.sub section.sub-board div.view div.board-navi {

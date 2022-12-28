@@ -205,6 +205,7 @@
 
                             <div class="button-set">
                                 <a class="list" href="">목록</a>
+                                <a class="list change" >수정</a>
                             </div>
 
                             <div class="board-navi">
@@ -230,7 +231,16 @@
         <!-- E:mainContent -->
 
 
-        <div class="shadow"></div>
+        <!-- 비밀번호 모달 -->
+        <!-- class에 on  -->
+        <div class="shadow">
+          <div class="pw-modal view">
+            <button class="close"><i class='bx bx-x'></i></button>
+            <label for="change-pw">비밀번호</label>
+            <input id="change-pw" type="password">
+            <button class="submit">확인</button>
+          </div>
+        </div>
         <!-- S:footer -->
         <footer id="footer">
           <div class="footer-box">

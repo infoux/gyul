@@ -117,6 +117,23 @@ $(function(){
     },
   });
 
+  new Swiper('.photo-swiper', {
+    autoplay: false ,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+
+    navigation: {
+      nextEl: '.photo-next',
+      prevEl: '.photo-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+  });
+
+
 });
 
 
@@ -193,6 +210,9 @@ function coverimage() {
 
 
   $(".gallery-img").each(function(){
+      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+  });
+  $(".photo-img").each(function(){
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
 
