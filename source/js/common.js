@@ -133,6 +133,28 @@ $(function(){
     },
   });
 
+  new Swiper('.brochure-swiper', {
+    autoplay: false ,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: false,
+
+    navigation: {
+      nextEl: '.brochure-next',
+      prevEl: '.brochure-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    breakpoints: {
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+    },
+  });
+
 
 });
 
@@ -212,7 +234,12 @@ function coverimage() {
   $(".gallery-img").each(function(){
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
+
   $(".photo-img").each(function(){
+      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+  });
+
+  $(".brochure-img").each(function(){
       $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
   });
 

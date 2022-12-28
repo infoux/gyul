@@ -106,6 +106,16 @@ body {
           right: 5px;
         }
       }
+
+      &.brochure{
+        color: #fff;
+        top: -40px;
+        right: 5px;
+        @media (min-width: $screen-size-pc) {
+          top: -60px;
+          right: 5px;
+        }
+      }
 		}
 
     div.pw-modal{
@@ -320,19 +330,16 @@ body {
             color: #fff;
             @media (min-width: $screen-size-pc) {
               font-size: 120px;
-              left: 50%;
-              transform: translate(-50%, -50%);
             }
             &.photo-prev{
               left: -65px;
               @media (min-width: $screen-size-pc) {
-                padding-right: 90px;
+                left: -110px;
               }
             }
             &.photo-next{
               right: -30px;
               @media (min-width: $screen-size-pc) {
-                padding-left: 950px;
               }
             }
             &.swiper-button-disabled{
@@ -368,6 +375,103 @@ body {
         }
     }
     }
+
+
+    div.brochure{
+      position: relative;
+      width: 100%;
+      height: 515px;
+      background: transparent;
+      @media (min-width: $screen-size-pc) {
+        width: 1068px;
+        height: 792px;
+      }
+      .brochure-swiper{
+        width: 100%;
+        height: 515px;
+        overflow: hidden;
+        margin: 0 auto;
+        @media (min-width: $screen-size-pc) {
+          width: 100%;
+          height: 792px;
+          margin: 0;
+        }
+        .swiper-slide{
+          width: 100%;
+          margin: 0;
+          @media (min-width: $screen-size-pc) {
+            // width: 534px;
+            width: 100%;
+            height: 792px;
+          }
+          img{
+            display: none;
+          }
+        }
+        
+        .btn-box {
+          button{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: 9999999999999;
+            width: 45px;
+            height: 65px;
+            outline: none;
+            border: none;
+            background: transparent;
+            font-size: 70px;
+            color: #fff;
+            @media (min-width: $screen-size-pc) {
+              font-size: 120px;
+            }
+            &.brochure-prev{
+              left: -65px;
+              @media (min-width: $screen-size-pc) {
+                left: -110px;
+              }
+            }
+            &.brochure-next{
+              right: -30px;
+              @media (min-width: $screen-size-pc) {
+                
+              }
+            }
+            &.swiper-button-disabled{
+              opacity: 0.2;
+            }
+          }
+        }
+
+        .swiper-pagination{
+          z-index: 9999999999999;
+          position: absolute;
+          bottom: -50px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 90px;
+          height: 36px;
+          background: #111;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          color: #fff;
+          .swiper-pagination-current{
+            color: #FF8811;
+            margin-right: 8px;
+          }
+          .swiper-pagination-total{
+            background: transparent;
+            color: #fff;
+            margin-left: 8px;
+          }
+        }
+    }
+    }
+
+
   }
 
   div.find-form {

@@ -3935,6 +3935,19 @@ body div.shadow button.close.photo {
   }
 }
 
+body div.shadow button.close.brochure {
+  color: #fff;
+  top: -40px;
+  right: 5px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow button.close.brochure {
+    top: -60px;
+    right: 5px;
+  }
+}
+
 body div.shadow div.pw-modal {
   position: relative;
   width: 300px;
@@ -4208,9 +4221,6 @@ body div.shadow div.photo .photo-swiper .btn-box button {
 @media (min-width: 1195px) {
   body div.shadow div.photo .photo-swiper .btn-box button {
     font-size: 120px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
 }
 
@@ -4220,18 +4230,12 @@ body div.shadow div.photo .photo-swiper .btn-box button.photo-prev {
 
 @media (min-width: 1195px) {
   body div.shadow div.photo .photo-swiper .btn-box button.photo-prev {
-    padding-right: 90px;
+    left: -110px;
   }
 }
 
 body div.shadow div.photo .photo-swiper .btn-box button.photo-next {
   right: -30px;
-}
-
-@media (min-width: 1195px) {
-  body div.shadow div.photo .photo-swiper .btn-box button.photo-next {
-    padding-left: 950px;
-  }
 }
 
 body div.shadow div.photo .photo-swiper .btn-box button.swiper-button-disabled {
@@ -4268,6 +4272,125 @@ body div.shadow div.photo .photo-swiper .swiper-pagination .swiper-pagination-cu
 }
 
 body div.shadow div.photo .photo-swiper .swiper-pagination .swiper-pagination-total {
+  background: transparent;
+  color: #fff;
+  margin-left: 8px;
+}
+
+body div.shadow div.brochure {
+  position: relative;
+  width: 100%;
+  height: 515px;
+  background: transparent;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.brochure {
+    width: 1068px;
+    height: 792px;
+  }
+}
+
+body div.shadow div.brochure .brochure-swiper {
+  width: 100%;
+  height: 515px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.brochure .brochure-swiper {
+    width: 100%;
+    height: 792px;
+    margin: 0;
+  }
+}
+
+body div.shadow div.brochure .brochure-swiper .swiper-slide {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.brochure .brochure-swiper .swiper-slide {
+    width: 100%;
+    height: 792px;
+  }
+}
+
+body div.shadow div.brochure .brochure-swiper .swiper-slide img {
+  display: none;
+}
+
+body div.shadow div.brochure .brochure-swiper .btn-box button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 9999999999999;
+  width: 45px;
+  height: 65px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 70px;
+  color: #fff;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.brochure .brochure-swiper .btn-box button {
+    font-size: 120px;
+  }
+}
+
+body div.shadow div.brochure .brochure-swiper .btn-box button.brochure-prev {
+  left: -65px;
+}
+
+@media (min-width: 1195px) {
+  body div.shadow div.brochure .brochure-swiper .btn-box button.brochure-prev {
+    left: -110px;
+  }
+}
+
+body div.shadow div.brochure .brochure-swiper .btn-box button.brochure-next {
+  right: -30px;
+}
+
+body div.shadow div.brochure .brochure-swiper .btn-box button.swiper-button-disabled {
+  opacity: 0.2;
+}
+
+body div.shadow div.brochure .brochure-swiper .swiper-pagination {
+  z-index: 9999999999999;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 90px;
+  height: 36px;
+  background: #111;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+body div.shadow div.brochure .brochure-swiper .swiper-pagination .swiper-pagination-current {
+  color: #FF8811;
+  margin-right: 8px;
+}
+
+body div.shadow div.brochure .brochure-swiper .swiper-pagination .swiper-pagination-total {
   background: transparent;
   color: #fff;
   margin-left: 8px;
