@@ -2,7 +2,6 @@
 $(function(){
 
   menu();
-  coverimage();
   maintab();
   outlink();
   allCheck();
@@ -227,27 +226,7 @@ function menu() {
 
 }
 
-/* ----- cover image ----- */ 
-function coverimage() {
 
-
-  $(".gallery-img").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-  $(".photo-img").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-  $(".brochure-img").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-  $(".photo p.img-bg").each(function(){
-      $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-  });
-
-}
 
 /* ----- main tab ----- */ 
 function maintab() {
