@@ -4121,8 +4121,8 @@ body div.shadow div.pw-modal div.result {
 
 body div.shadow div.youtube {
   position: relative;
-  width: 300px;
-  height: 315px;
+  width: 100%;
+  height: 365px;
   background: #eee;
 }
 
@@ -4135,6 +4135,7 @@ body div.shadow div.youtube {
 
 body div.shadow div.youtube iframe {
   width: 100%;
+  height: 365px;
 }
 
 @media (min-width: 1195px) {
