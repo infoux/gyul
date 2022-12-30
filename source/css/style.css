@@ -5493,6 +5493,10 @@ body div#content.main section.main-gallery .gallery-box .btn-box button {
   color: #fff;
 }
 
+body div#content.main section.main-gallery .gallery-box .btn-box button.swiper-button-disabled {
+  opacity: 0.2;
+}
+
 body div#content.main section.main-gallery .gallery-box .gallery-swiper {
   width: 345px;
   height: 250px;
@@ -5552,6 +5556,7 @@ body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 30px;
 }
 
 body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide .gallery-text:hover {
@@ -5571,6 +5576,23 @@ body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-
 
 body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide .gallery-text h4 {
   margin: 5px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide .gallery-ready img {
+  width: 345px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-gallery .gallery-box .gallery-swiper .swiper-slide .gallery-ready img {
+    width: 100%;
+  }
 }
 
 body div#content.main section.main-notice {
@@ -5631,6 +5653,10 @@ body div#content.main section.main-notice .notice-box .notice-btn button {
   margin-right: 15px;
 }
 
+body div#content.main section.main-notice .notice-box .notice-btn button.swiper-button-disabled {
+  opacity: 0.2;
+}
+
 body div#content.main section.main-notice .notice-box .notice-btn a {
   font-size: 18px;
 }
@@ -5686,7 +5712,7 @@ body div#content.main section.main-notice .notice-swiper .swiper-wrapper .swiper
   background: #F5F5F5;
   width: 100%;
   height: 100%;
-  font-size: 25px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5772,6 +5798,30 @@ body div#content.main section.main-notice .youtube iframe {
 
 @media (min-width: 1195px) {
   body div#content.main section.main-notice .youtube iframe {
+    width: 406px;
+    height: 280px;
+  }
+}
+
+body div#content.main section.main-notice .youtube .youtube-ready {
+  min-width: 345px;
+  min-height: 238px;
+  width: 100%;
+  background: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .youtube .youtube-ready {
     width: 406px;
     height: 280px;
   }
@@ -6462,6 +6512,7 @@ body div#content.sub section.sub-board div.list ul.list li a div.box div.file sp
   border-radius: 50%;
   top: -17px;
   right: 0;
+  font-size: 0;
 }
 
 @media (min-width: 1195px) {

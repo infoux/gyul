@@ -73,13 +73,10 @@ $(function(){
   })
 
   new Swiper('.gallery-swiper', {
-    autoplay:{
-      delay : 5000,
-      disableOnInteraction: false
-    },
+    autoplay:false,
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: true,
+    loop: false,
 
     navigation: {
       nextEl: '.gallery-next',
