@@ -8804,7 +8804,7 @@ body div#content.sub section.info div.container ul.gyul-effect li div.info-text 
 }
 
 body div#content.sub section.info div.container ul.gyul-effect li div.info-text ul.gyul li {
-  width: calc((100% -10px)/3);
+  width: calc((100%)/3);
   background: #F5F5F5;
   border-radius: 10px;
   padding: 20px 10px;
