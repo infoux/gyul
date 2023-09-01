@@ -7298,6 +7298,10 @@ body div#content.sub section.sub-board div.photo ul li a {
   display: block;
 }
 
+body div#content.sub section.sub-board div.photo ul li a:hover .bghover {
+  opacity: 1;
+}
+
 body div#content.sub section.sub-board div.photo ul li a .img-bg {
   width: 155px;
   height: 106px;
@@ -7351,10 +7355,6 @@ body div#content.sub section.sub-board div.photo ul li a .bghover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-body div#content.sub section.sub-board div.photo ul li a .bghover:hover {
-  opacity: 1;
 }
 
 body div#content.sub section.sub-board div.photo ul li a .bghover::before {
