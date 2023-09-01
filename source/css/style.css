@@ -7971,6 +7971,16 @@ body div#content.sub section.sign div.container div.terms div.table div {
   overflow-y: scroll;
 }
 
+body div#content.sub section.sign div.container div.terms div.table div p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+body div#content.sub section.sign div.container div.terms div.table div p.margin {
+  margin-left: 10px;
+}
+
 @media (min-width: 1195px) {
   body div#content.sub section.sign div.container div.terms div.table div {
     height: 250px;

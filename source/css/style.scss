@@ -3490,7 +3490,14 @@ body {
                 padding:15px;
                 height:200px;
                 overflow-y:scroll;
-    
+                p{
+                  margin: 0;
+                  font-size: 15px;
+                  line-height: 1.7;
+                  &.margin{
+                    margin-left: 10px;
+                  }
+                }
                 @media (min-width: $screen-size-pc) {
                   height:250px;
                 }
