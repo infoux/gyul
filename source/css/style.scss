@@ -1013,7 +1013,8 @@ body {
                         padding: 0;
                         top: 84px;
                         left: 50%;
-                        width: 185px;
+                        // width: 185px;
+                        width: 100%;
                         height: 290px;
                         transform: translateX(-50%);
                         max-height: 0;
@@ -1027,7 +1028,7 @@ body {
                         li {
                           
                             a {
-                                display: block;
+                                display: inline-block;
                                 word-break: keep-all;
                                 margin: 0 0 20px;
                                 color: #555;
@@ -1035,7 +1036,6 @@ body {
                                 font-weight: 500;
                                 line-height: 1.6;
                                 opacity: 0;
-
                                 @include ani(0.2s);
 
                                 &.active,
@@ -1082,14 +1082,15 @@ body {
                             padding: 40px 0 0 20px;
                             border-left: 1px solid #ccc;
                             border-top: 1px solid #ccc;
-                        &:last-of-type{
-                          border-right: 1px solid #ccc;
-                        }
                             a {
                                 opacity: 1;
                             }
 
-                            
+                        }
+                        &:last-of-type{
+                          ul{
+                            border-right: 1px solid #ccc;
+                          }
                         }
                     }
                 }
@@ -3997,6 +3998,19 @@ body {
               width: 345px;
               height: 229px;
               background: url(../images/setup.svg) no-repeat center / auto 100%;
+              margin: 40px auto;
+              font-size: 0;
+              @media (min-width: $screen-size-pc) {
+                width: 674px;
+                height: 446px;
+                margin: 50px auto 60px;
+              }
+            }
+            .img-en {
+              display: block;
+              width: 345px;
+              height: 229px;
+              background: url(../images/setup-EN.svg) no-repeat center / auto 100%;
               margin: 40px auto;
               font-size: 0;
               @media (min-width: $screen-size-pc) {

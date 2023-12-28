@@ -4925,7 +4925,7 @@ body.sub header div.tools {
     padding: 0;
     top: 84px;
     left: 50%;
-    width: 185px;
+    width: 100%;
     height: 290px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -4938,7 +4938,7 @@ body.sub header div.tools {
     border-top: 1px solid #ccc;
   }
   body nav#main-menu div.menus > ul > li ul li a {
-    display: block;
+    display: inline-block;
     word-break: keep-all;
     margin: 0 0 20px;
     color: #555;
@@ -4981,11 +4981,11 @@ body.sub header div.tools {
     border-left: 1px solid #ccc;
     border-top: 1px solid #ccc;
   }
-  body nav#main-menu.on div.menus > ul > li ul:last-of-type {
-    border-right: 1px solid #ccc;
-  }
   body nav#main-menu.on div.menus > ul > li ul a {
     opacity: 1;
+  }
+  body nav#main-menu.on div.menus > ul > li:last-of-type ul {
+    border-right: 1px solid #ccc;
   }
 }
 
@@ -8610,6 +8610,23 @@ body div#content.sub section.info div.container div.info-setup .img {
 
 @media (min-width: 1195px) {
   body div#content.sub section.info div.container div.info-setup .img {
+    width: 674px;
+    height: 446px;
+    margin: 50px auto 60px;
+  }
+}
+
+body div#content.sub section.info div.container div.info-setup .img-en {
+  display: block;
+  width: 345px;
+  height: 229px;
+  background: url(../images/setup-EN.svg) no-repeat center/auto 100%;
+  margin: 40px auto;
+  font-size: 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.sub section.info div.container div.info-setup .img-en {
     width: 674px;
     height: 446px;
     margin: 50px auto 60px;
