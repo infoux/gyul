@@ -5596,7 +5596,7 @@ body div#content.main section.main-notice {
 
 @media (min-width: 1195px) {
   body div#content.main section.main-notice {
-    margin-bottom: 185px;
+    margin-bottom: 75px;
   }
 }
 
@@ -5834,6 +5834,120 @@ body div#content.main section.main-notice .brochure {
 @media (min-width: 1195px) {
   body div#content.main section.main-notice .brochure {
     position: absolute;
+    top: 345px;
+    right: 0;
+    width: 406px;
+    height: 140px;
+    margin: 0;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box {
+  margin: 12px 0 0 0;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 40px;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box .youtube-en {
+  display: block;
+  min-width: 345px;
+  min-height: 238px;
+  width: 100%;
+  background: #F5F5F5;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box .youtube-en {
+    width: 800px;
+    min-height: 140px;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+}
+
+body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list iframe {
+  min-width: 345px;
+  min-height: 238px;
+  width: 100%;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list iframe {
+    width: 260px;
+    height: 140px;
+    min-width: 260px;
+    min-height: 140px;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list .youtube-text {
+  display: none;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list .youtube-text {
+    display: block;
+  }
+  body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list .youtube-text p {
+    margin: 40px 0 20px 0;
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+  }
+  body div#content.main section.main-notice .promotion-box .youtube-en .youtube-list .youtube-text i {
+    font-style: normal;
+    font-size: 17px;
+    color: #555555;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box .youtube-en .youtube-ready {
+  width: 100%;
+  height: 238px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box .youtube-en .youtube-ready {
+    height: 140px;
+  }
+}
+
+body div#content.main section.main-notice .promotion-box .brochure-en {
+  margin-top: 25px;
+  margin-bottom: 72px;
+  display: block;
+  font-size: 0;
+  background: url(../images/brochure.png) no-repeat center/cover;
+  width: 100%;
+  min-width: 345px;
+  height: 118px;
+}
+
+@media (min-width: 1195px) {
+  body div#content.main section.main-notice .promotion-box .brochure-en {
+    display: inline-block;
     top: 345px;
     right: 0;
     width: 406px;
