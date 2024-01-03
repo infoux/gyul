@@ -4578,7 +4578,7 @@ body u {
 body header {
   position: relative;
   z-index: 998;
-  height: 54px;
+  height: 63px;
   text-align: center;
   background: #fff;
   border-bottom: 1px solid #ccc;
@@ -4627,16 +4627,16 @@ body header .container h1 a {
   display: block;
   position: relative;
   font-size: 0;
-  width: 104px;
-  height: 41px;
-  background: url(../images/gyulLogo.svg) no-repeat center/100% auto;
+  width: 60px;
+  height: 48px;
+  background: url(../images/gyulLogo.png) no-repeat center/100% auto;
 }
 
 @media (min-width: 1195px) {
   body header .container h1 a {
     font-size: 0px;
-    width: 166px;
-    height: 66px;
+    width: 105px;
+    height: 85px;
   }
 }
 
@@ -4732,9 +4732,9 @@ body.sub header div.tools {
     display: block;
     position: relative;
     font-size: 0;
-    width: 104px;
-    height: 41px;
-    background: url(../images/gyulLogo.svg) no-repeat center/100% auto;
+    width: 60px;
+    height: 48px;
+    background: url(../images/gyulLogo.png) no-repeat center/100% auto;
     padding-left: 57px;
   }
   body nav#main-menu div.tools {
@@ -6637,6 +6637,7 @@ body div#content.sub section.sub-board div.list ul.list li a div.box div.file sp
   margin-left: 3px;
   width: 28px;
   height: 30px;
+  z-index: 999;
 }
 
 body div#content.sub section.sub-board div.list ul.list li a div.box div strong {
